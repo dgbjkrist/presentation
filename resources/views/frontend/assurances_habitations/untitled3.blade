@@ -1,0 +1,205 @@
+@extends('frontend.layouts.frontend')
+
+@section('title', 'Safe ~ Assurance')
+
+@section('css')
+ <link href="/assets/node_modules/wizard/steps.css" rel="stylesheet">
+
+
+@endsection
+
+
+
+
+@section('body')
+
+
+        <div class="page-title-area pt-120 pb-120" style="background-image:url(/front/img/bg/page-tile.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="page-title text-center mb-20">
+                            <h3>Services</h3>
+                            <img src="/front/img/icon/line.png" alt="">
+                        </div>
+                        <div class="breadcrum-list">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Service</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="quote-area pt-115 pb-115">
+            <div class="container">
+                <div class="row" id="validation">
+                    
+
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body wizard-content">
+                                <h4 class="card-title">SOUSCRIPTION DU PRODUIT HABITATION</h4>
+                                {{-- <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical website</a></h6> --}}
+                                <form action="#" class="tab-wizard wizard-circle">
+                                    <!-- Step 1 -->
+                                    <h6>Personal Info</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1"> </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6>Code de confirmation</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Code :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1"> </div>
+                                            </div>
+                                    
+                                 
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6>Information Beneficiaire</h6>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Nom Beneficiaire :</label>
+                                                    <input type="text" class="form-control" id="int1"> 
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Prenoms:</label>
+                                                    <input type="text" class="form-control" id="int1"> 
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wlocation2"> Select City : <span class="danger">*</span> </label>
+                                                    <select class="form-control required" id="wlocation2" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </section>
+                                    <!-- Step 5 -->
+                                    <h6>Remark</h6>
+                                    <section>
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">1 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">2 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">3 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">4 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">5 star</span> </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                                                        <h6>Remark</h6>
+                                    <section>
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">1 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">2 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">3 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">4 star</span> </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description ml-0">5 star</span> </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                  
+                </div>
+                </div>
+            </div>
+        </div>
+
+@endsection
+
+@section('js')
+
+     <script src="/dist/js/custom.min.js"></script>
+    <script src="/assets/node_modules/moment/min/moment.min.js"></script>
+    <script src="/assets/node_modules/wizard/jquery.steps.min.js"></script>
+    <script src="/assets/node_modules/wizard/jquery.validate.min.js"></script>
+    <!-- Sweet-Alert  -->
+    <script src="/assets/node_modules/sweetalert/sweetalert.min.js"></script>
+    <script src="/assets/node_modules/wizard/steps.js"></script>
+
+
+
+
+@endsection

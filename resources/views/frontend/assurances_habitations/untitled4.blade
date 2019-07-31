@@ -1,0 +1,101 @@
+@extends('frontend.layouts.frontend')
+
+@section('title', 'Safe ~ Assurance')
+
+@section('css')
+
+@endsection
+
+
+
+
+@section('body')
+
+
+        <div class="page-title-area pt-120 pb-120" style="background-image:url(/front/img/bg/page-tile.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="page-title text-center mb-20">
+                            <h3>Services</h3>
+                            <img src="/front/img/icon/line.png" alt="">
+                        </div>
+                        <div class="breadcrum-list">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Service</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="quote-area pt-115 pb-115">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="quote-form gray-bg">
+                            <ul class="nav quote-tab mb-15" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Life Insurance</a>
+                                </li>
+               
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="quote-wrapper">
+                                        <div class="quote-form-box">
+                                            <form action="#" method="POST">
+                                                <h3>Life insurance Quote</h3>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="form-title">
+                                                            <h4>Contact details:</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <input name="name" type="text" placeholder="Name">
+                                                    </div>
+                       
+                                                    <div class="col-xl-6">
+                                                        <input name="phone" type="text" placeholder="Phone">
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <input name="email" type="email" placeholder="Email">
+                                                    </div>
+                                                        <div class="col-xl-6">
+                                                        <input name="email" type="email" placeholder="Email">
+                                                    </div>
+                       
+                                                    <div class="col-xl-12">
+                                                        <button class="btn btn-prime" type="submit">Get a Quote</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="quote-bg" style="background-image:url(/front/img/bg/quote.jpg)"></div>
+                                    </div>
+                                </div>
+                        
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+@endsection
+
+@section('js')
+
+
+
+
+@endsection
